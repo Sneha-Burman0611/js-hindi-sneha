@@ -1,6 +1,6 @@
 //Primitive
 
-//7 types : String, NUmber, Boolean, null, undefined,Symbol,
+//7 types : String, Number, Boolean, null, undefined,Symbol,
 BigInt
 
 const score = 100
@@ -50,4 +50,30 @@ Symbol()	Symbol	"symbol"
 { name: "John", age: 30 }	Object	"object"
 function() {}	Function	"function"
 () => {}	Function	"function"*/
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "hiteshchoudharydotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
  
