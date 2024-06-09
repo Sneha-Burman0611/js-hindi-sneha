@@ -42,9 +42,42 @@ tinderUser.isLoggedIn = false
 console.log(tinderUser);
 
 //array ke andar store kar ke dega
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser));
+//console.log(Object.keys(tinderUser));
+//console.log(Object.values(tinderUser))
+//console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+//console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+const course ={
+    coursename: "js in hindi",
+    price: "ggg",
+    courseInstructor: "hitesh"
+}
+
+//course.courseInstructor
+//destructure an object
+const {courseInstructor: instructor} = course
+
+console.log(instructor);
+
+// react props
+//const navbar = ({company}) => {
+
+//}
+
+//navbar(company = "hitesh")
+
+// json dikhta kaisa hai?
+//{
+//    "name": "hitesh",
+//    "cousename": "js in hindi",
+//   "price": "free"
+//}
+
+//is tarah ke format me bhi aa skta hai
+[
+    {},
+    {},
+    {}
+]
  
