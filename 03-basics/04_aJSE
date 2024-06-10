@@ -1,0 +1,45 @@
+/*JavaScript Execution Context
+
+Global Execution Context
+Function Execution Context
+Eval Execution Context
+
+Memory Creation Phase
+Execution Phase
+*/
+
+//ek function hai
+let val1 = 10
+let val2 = 5
+function addNum(num1, num2){
+    let total = num1+ num2
+    return total
+}
+let result1 = addNUM(val1, val2)
+let result2 = addNum(10, 2)
+
+//1. Global Execution->this
+
+//2.Memory Phase
+//val1 -> undefined
+//val2 -> undefined
+//addNum->definition//pura function
+//result1->undefined
+//result2->undefined
+
+/*3.Execution Phase
+val1->10
+val2->5
+addNUM----->new variable environment + execution thread
+ |
+ |
+ |
+\|/
+Memory Phase          Execution Context
+val1->undefined        num1->10
+val2->undefined        num2->5
+total-> undefined      total->15//global ko de dega
+finally it gets deleted
+
+jitni baar function aayega dobara wahi cheez repeat hota hai
+*/
