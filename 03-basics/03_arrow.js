@@ -52,7 +52,7 @@ const user = {
 
 // implicit return(mtlb return ni lgaana pddta whereas explict me lagana pddta hai )
 
-const addTwo = (num1, num2) => num1 + num2;
+//const addTwo = (num1, num2) => num1 + num2;
 
 const addTwo = (num1, num2) => ({username: "hitesh"})
 
